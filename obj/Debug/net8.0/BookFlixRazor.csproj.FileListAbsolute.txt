@@ -1,0 +1,9 @@
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.csproj.AssemblyReference.cache
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.GeneratedMSBuildEditorConfig.editorconfig
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.AssemblyInfoInputs.cache
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.AssemblyInfo.cs
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.csproj.CoreCompileInputs.cache
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.MvcApplicationPartsAssemblyInfo.cache
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.RazorAssemblyInfo.cache
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.RazorAssemblyInfo.cs
+/home/et12alumno/Escritorio/BookFlixProyecto/obj/Debug/net8.0/BookFlixRazor.sourcelink.json
