@@ -8,6 +8,7 @@ namespace BookFlixRazor.Services
         Usuario? Login (string correo, string password);
         IEnumerable<Usuario> ObtenerTodosLosUsuarios ();
         Usuario? ObtenerUsuarioPorId(int id);
+        Usuario? ObtenerPorCorreo(string correo);
 
     }
 }

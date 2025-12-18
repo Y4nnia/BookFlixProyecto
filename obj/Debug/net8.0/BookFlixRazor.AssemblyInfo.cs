@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookFlixRazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bae8068cc9767590b24e8faa6b8cc37f13daeb6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fed7067b39d26df502a6f58daacf390bf3a47cf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookFlixRazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookFlixRazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

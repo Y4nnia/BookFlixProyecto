@@ -19,8 +19,8 @@ namespace BookFlixRazor.Repository
             using var connection = _conexion.CreateConnection();
 
             string sql = @"
-                INSERT INTO Usuario (Nombre, Correo, Password)
-                VALUES (@Nombre, @Correo, @Password); ";
+                INSERT INTO Usuario (Nombre, Apellido, Correo, Password)
+                VALUES (@Nombre, @Apellido, @Correo, @Password); ";
 
             connection.Execute(sql, usuario);
         }
@@ -46,12 +46,22 @@ namespace BookFlixRazor.Repository
                 new { Correo = correo }
             );
         }
+
+        public Usuario? Login(string correo, string password)
+        {
+            using var connection = _conexion.CreateConnection();
+            string sql = "SELECT * FROM Usuario WHERE Correo = @Correo AND Password = @Password";
+
+            return connection.QueryFirstOrDefault<Usuario>(
+                sql,
+                new { Correo = correo, Password = password }
+            );
+        }
+
         public IEnumerable<Usuario> GetAll()
         {
             using var connection = _conexion.CreateConnection();
             return connection.Query<Usuario>("SELECT * FROM Usuario");
         }
-
-        
     }
 }

@@ -24,8 +24,8 @@ namespace BookFlixRazor.Repository
         {
             using var connection = _conexion.CreateConnection();
             return connection.QueryFirstOrDefault<Libro>(
-                "SELECT * FROM Libro WHERE IdLibro = @IdLibro",
-                new { IdLibro = id }
+                "SELECT * FROM Libro WHERE Id= @Id",
+                new { Id = id }
             );
         }
 

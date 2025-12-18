@@ -1,0 +1,27 @@
+@page
+@model BookFlixRazor.Pages.RegistroModel
+
+<h2>Registrarse</h2>
+<form method="post">
+    <div class="mb-3">
+        <label>Nombre</label>
+        <input asp-for="Usuario.Nombre" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Apellido</label>
+        <input asp-for="Usuario.Apellido" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Correo</label>
+        <input asp-for="Usuario.Correo" class="form-control" required type="email" />
+    </div>
+    <div class="mb-3">
+        <label>Contraseña</label>
+        <input asp-for="Usuario.Password" class="form-control" required type="password" />
+    </div>
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+</form>
+@if (Model.Mensaje != null)
+{
+    <div class="alert alert-info mt-3">@Model.Mensaje</div>
+}

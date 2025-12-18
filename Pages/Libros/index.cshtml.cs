@@ -5,19 +5,19 @@ using BookFlixRazor.Services;
 namespace BookFlixRazor.Pages.Libros
 {
     public class IndexModel : PageModel
-    {
-        private readonly ILibroService _libroService;
+     {
+         private readonly ILibroService _libroService;
 
-        public IndexModel(ILibroService libroService)
-        {
-            _libroService = libroService;
-        }
+         public IndexModel(ILibroService libroService)
+         {
+             _libroService = libroService;
+         }
 
-        public IEnumerable<Libro> Libros { get; set; } = [];
+         public IEnumerable<Libro> Libros { get; set; } = [];
 
-        public void OnGet()
-        {
-            Libros = _libroService.ObtenerTodos();
-        }
-    }
-}
+         public void OnGet()
+         {
+             Libros = _libroService.ObtenerTodos();
+         }
+     }
+ }

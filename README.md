@@ -13,9 +13,9 @@
 Permitir a los usuarios acceder a una amplia variedad de libros digitales que puedan comprar y leer desde cualquier dispositivo. La plataforma facilita guardar libros favoritos, realizar compras sin necesidad de ir a una librería física y ahorrar tiempo; además, promueve la lectura mediante un entorno totalmente digital.
 
 🛠️ Tecnologías Utilizadas
-Tecnología	Uso
-ASP.NET Core 9 (Razor Pages)	Backend + Frontend
-C#	Lógica del sistema
+Tecnología  Uso
+ASP.NET Core 9 (Razor Pages)    Backend + Frontend
+C#  Lógica del sistema
 JSON / MySQL
 
 👨‍💻 Estructura y Explicación Técnica
@@ -71,31 +71,72 @@ Contraseña mínima de 6 caracteres.
 
 ✅ Interfaz amigable, responsive y moderna con Bootstrap 5.
 
-## 📝 Lista de Tareas
+##  Lista de Tareas
 
-| Tarea | Descripción | Duración | Precedencia | Encargados |
+Tarea | Descripción | Duración (Dias) | Precedencia | Encargados |
 |------|-------------|----------|-------------|------------|
-| A | Crear repositorio GitHub | 15 min | –––– | Enzo Casimiro |
-| B | Crear proyecto en HTML (estructura básica) | 2 h | –––– | Enzo Casimiro |
-| C | Crear proyecto en Razor Pages | 1 h | B | Enzo Casimiro |
-| D | Implementar contenido HTML en Razor Pages | 40 min | C | Enzo Casimiro, Yanina Piuca, Sofía Gonzalez |
-| E | Crear login/registro de usuario | 2 h | C | Enzo Casimiro |
-| F | Modificar pantalla principal | 2 h | E | Sofía Gonzalez, Yanina Piuca, Enzo Casimiro |
-| G | Agregar libros a la pantalla principal | 1 h | F | Yanina Piuca, Enzo Casimiro, Sofía Gonzalez |
-| H | Botón “Ver más” (más info del libro) | 1 h | G | Enzo Casimiro |
-| I | Agregar filtros por categoría | 1 h | G | Enzo Casimiro, Yanina Piuca, Sofía Gonzalez |
-| J | Agregar buscador | 2 h | G | Enzo Casimiro |
-| K | Agregar diseño | 1 h | F | Sofía Gonzalez, Yanina Piuca |
-| L | Crear Base de Datos | 5 h | B, C | Enzo Casimiro |
+| A | Crear repositorio GitHub | 1  | –––– | Enzo Casimiro |
+| B | Crear proyecto en HTML (estructura básica) | 3 | –––– | Enzo Casimiro |
+| C | Crear proyecto en Razor Pages | 1 | B | Enzo Casimiro |
+| D | Implementar contenido HTML en Razor Pages | 2 | C | Enzo Casimiro, Yanina Piuca, Sofía Gonzalez |
+| E | Crear login/registro de usuario | 3| C | Enzo Casimiro |
+| F | Modificar pantalla principal | 3 | E | Sofía Gonzalez, Yanina Piuca, Enzo Casimiro |
+| G | Agregar libros a la pantalla principal | 4 | F | Yanina Piuca, Enzo Casimiro, Sofía Gonzalez |
+| H | Botón “Ver más” (más info del libro) | 1 | G | Enzo Casimiro |
+| I | Agregar filtros por categoría | 2 | G | Enzo Casimiro, Yanina Piuca, Sofía Gonzalez |
+| J | Agregar buscador | 2  | G | Enzo Casimiro |
+| K | Agregar diseño | 4 | F | Sofía Gonzalez, Yanina Piuca |
+| L | Crear Base de Datos | 5 | B, C | Enzo Casimiro |
 
 ---
 
 Duración total estimada: **10.25 horas**
 
-Diagrama de Gantt
-<img width="868" height="250" alt="Captura de pantalla de 2025-12-05 14-24-53" src="https://github.com/user-attachments/assets/a094ebdf-389c-4bf2-9fef-146c772ce437" />
 
+### **Gantt**
 
+```mermaid
+
+gantt
+    title BookFlix
+    dateFormat DD
+    axisFormat Día %D
+    
+    section Crea Repositorio GitHub
+    A : A, 01, 1d
+    
+    section Crea Proyecto HTML
+    B : B, after A, 3d
+    
+    section Crea Proyecto Razor Pages
+    C : C, after B, 1d
+    
+    section Implementa HTML en Razor Pages
+    D : D, after C, 2d
+    
+    section Crea Login/Registro Usuario
+    E : E, after C, 3d
+    
+    section Modifica Pantalla Principal
+    F : F, after E, 3d
+    
+    section Agrega Libros a Pantalla Principal
+    G : G, after F, 4d
+    
+    section Agrega Botón "Ver más"
+    H : H, after G, 1d
+    
+    section Agrega Filtros por Categoría
+    I : I, after G, 2d
+    
+    section Agrega Buscador
+    J : J, after G, 2d
+    
+    section Agrega Diseño
+    K : K, after F, 4d
+
+    section Crea Base de Datos
+    L : L, after C, 5d
 ---
 
 ## 📄 Descripción general
