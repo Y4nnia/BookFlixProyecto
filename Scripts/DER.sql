@@ -1,0 +1,22 @@
+DROP DATABASE IF EXISTS bd_BookFlix;
+CREATE DATABASE bd_BookFlix;
+USE bd_BookFlix;
+
+CREATE TABLE Libro (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Titulo VARCHAR(150) NOT NULL,
+    Autor VARCHAR(150) NOT NULL,
+    Anio INT,
+    Descripcion TEXT,
+    Precio DECIMAL(10,2),
+    Imagen VARCHAR(255),
+    Categoria VARCHAR(100)
+);
+
+CREATE TABLE Usuario (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(100),
+    Apellido VARCHAR(100),
+    Correo VARCHAR(150) UNIQUE NOT NULL,
+    Password VARCHAR(255) NOT NULL
+);

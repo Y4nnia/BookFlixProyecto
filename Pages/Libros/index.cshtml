@@ -1,0 +1,23 @@
+@page
+@model BookFlixRazor.Pages.Libros.IndexModel
+
+<h2 class="text-center mb-4">📚 Catálogo de Libros</h2>
+
+<div class="row">
+@foreach (var libro in Model.Libros)
+{
+    <div class="col-md-3 mb-4">
+        <div class="card h-100">
+            <img src="/img/@libro.Imagen" class="card-img-top" alt="@libro.Titulo">
+            <div class="card-body">
+                <h5 class="card-title">@libro.Titulo</h5>
+                <p class="card-text">@libro.Autor</p>
+                <p class="fw-bold">$@libro.Precio</p>
+                <a asp-page="/Libros/Detalle" asp-route-id="@libro.Id" class="btn btn-primary">
+                    Ver más
+                </a>
+            </div>
+        </div>
+    </div>
+}
+</div>
